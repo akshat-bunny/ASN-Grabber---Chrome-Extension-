@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASN Grabber</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 10px; width: 250px; }
+        input { width: 100%; padding: 5px; margin-bottom: 10px; }
+        ul { list-style-type: none; padding: 0; max-height: 200px; overflow-y: auto; }
+        li { background: #f4f4f4; margin: 5px 0; padding: 8px; border-radius: 5px; }
+        button { margin-top: 10px; padding: 5px 10px; cursor: pointer; background: #007bff; color: white; border: none; border-radius: 5px; display: block; width: 100%; }
+        #clear-btn { background: #dc3545; }
+    </style>
+</head>
+<body>
+    <h3>ASN Grabber</h3>
+    
+    <input type="text" id="search-box" placeholder="Enter company name...">
+    <button id="search-btn">Search ASN</button>
+
+    <h4>Extracted ASN Numbers</h4>
+    <ul id="asn-list"></ul>
+    <button id="copy-btn">Copy ASNs</button>
+    <button id="clear-btn">Clear ASNs</button>
+
+    <script src="popup.js"></script>
+</body>
+</html>
